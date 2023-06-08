@@ -23,8 +23,7 @@ public class CoinsShopItemController : MonoBehaviour
     }
     public void OnPurchaseCoinsCompleted(int coins)
     {
-        Debug.Log("OnPurchaseCoinsCompleted:" + coins);
-        Debug.Log("OnPurchaseCoinsCompleted:current coins" + (FindObjectOfType<MainMenuController>().getCurrentCoinsCoint()));
+       
         FindObjectOfType<MainMenuController>().setCoinsText((FindObjectOfType<MainMenuController>().getCurrentCoinsCoint() + coins).ToString());
       Utils.increaseCoins(coins);
     }

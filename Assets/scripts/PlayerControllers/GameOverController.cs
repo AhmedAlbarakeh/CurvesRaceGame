@@ -25,20 +25,25 @@ public class GameOverController : MonoBehaviour
     }
 
     void Update(){
-        if(GameManager.IsGameEnded()&&!uiIsSetted){
-            gameOverSound.Play();
+       
+    }
+
+    public void endTheGame()
+    {
+
+        Debug.Log("--------------------------------------------------------------02");
+        gameOverSound.Play();
             gameOverDialog.SetActive(true);
             LeanTween.scale(gameOverDialog, new Vector3(0.75f, 0.7f, 1), 1.5f).setDelay(0.3f).setEase(LeanTweenType.easeOutElastic);
-            Debug.Log("Update- isGameEnded");
-            if(!gameManager.getReasonOfGameOver()) gameOverResonStr="FUEL RAN OUT";
+            if (!gameManager.getReasonOfGameOver()) gameOverResonStr = "FUEL RAN OUT";
 
-            overResonTitleTxt.text=gameOverResonStr;
-           coinTxt.text="+" + gameManager.getCoinsCount() + " COINS";
-           diamondTxt.text = "+" +  gameManager.getGEMSCount() + " GEMS";
-           metersTxt.text= gameManager.getMetersCount()+" m";
-           uiIsSetted=true;
-           
-        }
+            overResonTitleTxt.text = gameOverResonStr;
+            coinTxt.text = "+" + gameManager.getCoinsCount() + " COINS";
+            diamondTxt.text = "+" + gameManager.getGEMSCount() + " GEMS";
+            metersTxt.text = gameManager.getMetersCount() + " m";
+            uiIsSetted = true;
+
+        
     }
    
 }

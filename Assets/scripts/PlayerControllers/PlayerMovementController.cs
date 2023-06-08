@@ -83,12 +83,16 @@ public class PlayerMovementController : MonoBehaviour
 
     public void conitinue()
     {
+
+       
         GameManager.setEndGameFlag(false);
         GameManager.setEndLevelFlag(false);
- 
+        transform.position = transform.position + new Vector3(0, 2f, 0);
         gas = 1;
         gameObject.transform.rotation = Quaternion.identity;
-        transform.position = transform.position + new Vector3(0, 2, 0);
+        FindObjectOfType<HeadCollision>().startingCollision = true;
+       
+
     }
     void Start(){
 

@@ -96,6 +96,8 @@ public class GameManager : MonoBehaviour
   
 
      public void EndGame(){
+        Debug.Log("--------------------------------------------------------------01");
+        FindObjectOfType<GameOverController>().endTheGame();
         PlayerData data = SaveSystem.LoadPlayer();
         if (data != null)
         {

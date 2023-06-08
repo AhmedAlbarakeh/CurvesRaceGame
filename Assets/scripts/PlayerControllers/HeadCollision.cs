@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class HeadCollision : MonoBehaviour
 {
+
+    
    
-   bool collide = false;
+    public bool startingCollision = true;
    float timer = 0;
    readonly float duration = 1.5f; //one second
    
+    private void Start()
+    {
+        Debug.Log("Start HeadCollision");
+    }
     void OnTriggerEnter2D(Collider2D col){
       if(GameManager.IsLevelEnded()==false&&GameManager.IsGameEnded()==false){
          if(col.CompareTag("EndLevel0")){
@@ -19,31 +25,21 @@ public class HeadCollision : MonoBehaviour
             return;
        }
 
-       if(!collide && col.CompareTag("Ground"))
+       if( col.CompareTag("Ground")&&startingCollision)
         {
-          collide = true;
+                Debug.Log("*********************************************** collide");
+                FindObjectOfType<GameManager>().setReasonOfOver(true);
+                Debug.Log("--------------------------------------------------------------00");
+                FindObjectOfType<GameManager>().EndGame();
+                GameManager.setEndGameFlag(true);
+               
           timer = 0;
         }
       }
       
      }
 
-     void FixedUpdate()
-     { 
-      if(GameManager.IsLevelEnded()==false&&GameManager.IsGameEnded()==false){
-        if(collide)
-      {
-        timer+=Time.fixedDeltaTime/2;
-        if(timer>=duration)
-          {
-               //a second has passed so do something
-                FindObjectOfType<GameManager>().setReasonOfOver(true);
-              FindObjectOfType<GameManager>().EndGame();
-              GameManager.setEndGameFlag(true);
-          }
-      }
-    }
 
  }
   
-}
+

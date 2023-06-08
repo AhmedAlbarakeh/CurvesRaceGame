@@ -57,7 +57,7 @@ public class RewardAdsController : MonoBehaviour
         else
         {
 
-
+            FindObjectOfType<HeadCollision>().startingCollision = false;
             FindObjectOfType<PlayerMovementController>().conitinue();
             gameOverUIObj.transform.localScale = Vector3.zero;
             FindObjectOfType<GameOverController>().uiIsSetted = false;
