@@ -18,6 +18,8 @@ public class RewardAdsController : MonoBehaviour
     private RewardedAd rewardedAd;
     public AudioSource coinCollectedSound;
     public int rewardCoinsCount = 5000;
+    public bool isForContinue = false;
+    public GameObject gameOverUIObj;
 
     /// <summary>
     /// Loads the rewarded ad.
@@ -45,9 +47,22 @@ public class RewardAdsController : MonoBehaviour
 
     void RewardAddHasCompleted()
     {
-        coinCollectedSound.Play();
-        FindObjectOfType<MainMenuController>().setCoinsText((FindObjectOfType<MainMenuController>().getCurrentCoinsCoint() + rewardCoinsCount).ToString());
-        Utils.increaseCoins(rewardCoinsCount);
+        if (!isForContinue)
+        {
+          
+            Debug.Log("RewardAddHasCompleted");
+            FindObjectOfType<MainMenuController>().setCoinsText((FindObjectOfType<MainMenuController>().getCurrentCoinsCoint() + rewardCoinsCount).ToString());
+            Utils.increaseCoins(rewardCoinsCount);
+        }
+        else
+        {
+
+
+            FindObjectOfType<PlayerMovementController>().conitinue();
+            gameOverUIObj.transform.localScale = Vector3.zero;
+            FindObjectOfType<GameOverController>().uiIsSetted = false;
+
+        }
     }
     private void RegisterEventHandlers(RewardedAd ad)
     {

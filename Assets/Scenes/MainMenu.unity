@@ -775,6 +775,7 @@ MonoBehaviour:
   selectSound: {fileID: 61808063}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 61808060}
+  priceInCoins: 1
 --- !u!114 &61808067 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8945437295169005812, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -2557,6 +2558,38 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 209df09288a05ce4da16b4fd2cf3ae72, type: 3}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1867789651}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.coins25000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1867789647}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseCoinsCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 25000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
 --- !u!1 &221733585 stripped
@@ -3392,6 +3425,7 @@ MonoBehaviour:
   selectSound: {fileID: 312277648}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 312277643}
+  priceInCoins: 1
 --- !u!1 &313997610
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,6 +4580,10 @@ PrefabInstance:
       value: Gems100
       objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750739, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097150482831750739, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: productId
       value: com.ayhamo.gems100
       objectReference: {fileID: 0}
@@ -4601,6 +4639,38 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 137d8aa8ba5d70541b80b99119a63c66, type: 3}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 743663570}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.gems100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 743663566}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseGemssCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
 --- !u!1 &378970775
@@ -5151,6 +5221,7 @@ MonoBehaviour:
   selectSound: {fileID: 414452657}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 414452654}
+  priceInCoins: 1
 --- !u!1 &428384428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5650,6 +5721,7 @@ MonoBehaviour:
   selectSound: {fileID: 434524186}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 434524183}
+  priceInCoins: 1
 --- !u!114 &434524190 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8945437295169005812, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -5833,6 +5905,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins5000
       objectReference: {fileID: 0}
+    - target: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1834689915}
+    - target: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097150482831750739, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750739, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: productId
       value: com.ayhamo.coins5000
@@ -5885,6 +5977,42 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 93a74b778be4fd241b09f09109e2fbf8, type: 3}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1834689917}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.coins5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 814906286}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseCoinsCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
 --- !u!1001 &442939283
@@ -6120,6 +6248,7 @@ MonoBehaviour:
   selectSound: {fileID: 442939288}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 442939285}
+  priceInCoins: 1
 --- !u!114 &442939291 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8945437295169005812, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -8725,6 +8854,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27654772c1c7af74f916f982402bc08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &743663570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 377821785}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &752906016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8876,6 +9016,38 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: f891305d2cf4e7d4da29276daa267516, type: 3}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1012991318}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.gems500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 984440175}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseGemssCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
 --- !u!1 &754266705 stripped
@@ -8933,6 +9105,7 @@ MonoBehaviour:
   selectSound: {fileID: 764157050}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1790373355}
+  priceInCoins: 1
 --- !u!1 &766956806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945437295169005768, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -8983,6 +9156,7 @@ MonoBehaviour:
   selectSound: {fileID: 766956808}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1401210856}
+  priceInCoins: 1
 --- !u!1 &772705549
 GameObject:
   m_ObjectHideFlags: 0
@@ -9764,6 +9938,7 @@ MonoBehaviour:
   selectSound: {fileID: 816284107}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 1882826916}
+  priceInCoins: 1
 --- !u!1 &817113073
 GameObject:
   m_ObjectHideFlags: 0
@@ -10146,6 +10321,7 @@ MonoBehaviour:
   selectSound: {fileID: 859657536}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 911749956}
+  priceInCoins: 1
 --- !u!1 &864066545
 GameObject:
   m_ObjectHideFlags: 0
@@ -11079,6 +11255,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27654772c1c7af74f916f982402bc08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &993778309 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 1318410404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1012991318 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 752906016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1016818960
@@ -12226,12 +12424,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8945437295372340528, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
       propertyPath: m_text
-      value: 550 000
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8945437295518375647, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
       propertyPath: m_text
       value: TOURIST CAR
       objectReference: {fileID: 0}
+    - target: {fileID: 8945437296135767025, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd675a9d53aad8d428418c1077004399, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -12290,6 +12492,7 @@ MonoBehaviour:
   selectSound: {fileID: 1152763818}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1152763815}
+  priceInCoins: 0
 --- !u!114 &1152763824 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8945437295169005815, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -13640,6 +13843,7 @@ MonoBehaviour:
   selectSound: {fileID: 1277576906}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 822452540}
+  priceInCoins: 1
 --- !u!1 &1278029886
 GameObject:
   m_ObjectHideFlags: 0
@@ -14355,6 +14559,10 @@ PrefabInstance:
       value: Coins15000
       objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750739, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097150482831750739, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: productId
       value: com.ayhamo.coins15000
       objectReference: {fileID: 0}
@@ -14410,6 +14618,38 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 95bb0e9dae82a1240bd2e3d76020dd74, type: 3}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 993778309}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.coins15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 565437182}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseCoinsCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
 --- !u!1 &1320342680
@@ -15473,6 +15713,7 @@ MonoBehaviour:
   selectSound: {fileID: 1470675090}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1379842378}
+  priceInCoins: 1
 --- !u!1 &1477901825
 GameObject:
   m_ObjectHideFlags: 0
@@ -16757,6 +16998,7 @@ MonoBehaviour:
   selectSound: {fileID: 1551317220}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 1157766581}
+  priceInCoins: 1
 --- !u!1 &1554474054
 GameObject:
   m_ObjectHideFlags: 0
@@ -17518,6 +17760,7 @@ MonoBehaviour:
   selectSound: {fileID: 1602754098}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 1069087670}
+  priceInCoins: 1
 --- !u!1001 &1608028679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17663,12 +17906,16 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 12ed9b3f618acea42a0c05d04d2768af, type: 3}
     - target: {fileID: 8945437295372340528, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
       propertyPath: m_text
-      value: 1 000 000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8945437295518375647, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
       propertyPath: m_text
       value: TANK
       objectReference: {fileID: 0}
+    - target: {fileID: 8945437296135767025, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd675a9d53aad8d428418c1077004399, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -17717,6 +17964,7 @@ MonoBehaviour:
   selectSound: {fileID: 1608028682}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1483212149}
+  priceInCoins: 0
 --- !u!1 &1611664521
 GameObject:
   m_ObjectHideFlags: 0
@@ -18466,6 +18714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinCollectedSound: {fileID: 1678181799}
   rewardCoinsCount: 10000
+  isForContinue: 0
+  gameOverUIObj: {fileID: 0}
 --- !u!82 &1678181799
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19968,6 +20218,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1834689915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 440255147}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b79b5624d944058bd39aad2b90fb275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1834689917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 440255147}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1845064808 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
@@ -19977,6 +20249,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27654772c1c7af74f916f982402bc08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1845064812 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 2069219608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1849124693 stripped
@@ -20350,6 +20633,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27654772c1c7af74f916f982402bc08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1867789651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+  m_PrefabInstance: {fileID: 217542039}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1881028090 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945437295169005768, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -20400,6 +20694,7 @@ MonoBehaviour:
   selectSound: {fileID: 1881028092}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1849124693}
+  priceInCoins: 1
 --- !u!1 &1882826916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945437294708658697, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -20470,6 +20765,7 @@ MonoBehaviour:
   selectSound: {fileID: 1928347988}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 2120438983}
+  priceInCoins: 1
 --- !u!1 &1936007987 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945437295169005768, guid: ccb3722fba2a7f043a3d09a39f516ab5, type: 3}
@@ -20520,6 +20816,7 @@ MonoBehaviour:
   selectSound: {fileID: 1936007989}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 1658282270}
+  priceInCoins: 1
 --- !u!1001 &1957139150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20719,6 +21016,7 @@ MonoBehaviour:
   selectSound: {fileID: 1957139153}
   selectDialog: {fileID: 686533989}
   pricingCarBGObj: {fileID: 1988888574}
+  priceInCoins: 1
 --- !u!1 &1958730644
 GameObject:
   m_ObjectHideFlags: 0
@@ -21552,6 +21850,38 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 137d8aa8ba5d70541b80b99119a63c66, type: 3}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1845064812}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.gems150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1845064808}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseGemssCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
 --- !u!1 &2071231906
@@ -22206,6 +22536,7 @@ MonoBehaviour:
   selectSound: {fileID: 2076523488}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 1904826796}
+  priceInCoins: 1
 --- !u!1 &2080895062
 GameObject:
   m_ObjectHideFlags: 0
@@ -22670,6 +23001,7 @@ MonoBehaviour:
   selectSound: {fileID: 2109555075}
   selectDialog: {fileID: 1772719043}
   pricingCarBGObj: {fileID: 254550987}
+  priceInCoins: 1
 --- !u!1 &2111109501
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,6 +31,8 @@ public class ShopItemController : MonoBehaviour
 
     private static GameObject selectedPricingObj;
 
+    public bool priceInCoins = true;
+
 
 
     private void Start()
@@ -70,7 +72,7 @@ public class ShopItemController : MonoBehaviour
                 selectDialog.GetComponent<SelectCarDialogUI>().enabled = true;
                 selectDialog.SetActive(true);
                 selectDialog.transform.localScale = new Vector3(0, 0, 0);
-                selectDialog.GetComponent<SelectCarDialogUI>().setDialogUiParamers(image.sprite, priceTxt.text, nameTxt.text, gameObject.name);
+                selectDialog.GetComponent<SelectCarDialogUI>().setDialogUiParamers(image.sprite, priceTxt.text, nameTxt.text, gameObject.name,priceInCoins);
 
 
                 LeanTween.scale(selectDialog, new Vector3(1, 1, 1), 1.5f).setEase(LeanTweenType.easeOutElastic);

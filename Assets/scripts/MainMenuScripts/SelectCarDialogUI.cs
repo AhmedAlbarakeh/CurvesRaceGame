@@ -30,9 +30,11 @@ public class SelectCarDialogUI : MonoBehaviour
     private string boughtObjIdName;
     bool getCoinsBtnClicked = false;
 
+    bool priceInCoin = true;
 
 
-    public void setDialogUiParamers(Sprite sprite,string price,string title,string vIdName)
+
+    public void setDialogUiParamers(Sprite sprite,string price,string title,string vIdName,bool priceInCoins)
     {
         priceTxt.text = price;
         if(sprite != null)
@@ -40,6 +42,7 @@ public class SelectCarDialogUI : MonoBehaviour
         titleTxt.text = title;
 
         boughtObjIdName= vIdName;
+        priceInCoin = priceInCoins;
     }
 
     public void OnBuyBtnClicked()
@@ -48,30 +51,60 @@ public class SelectCarDialogUI : MonoBehaviour
         {
            shopBtn.onClick.Invoke();
             gameObject.SetActive(false);
+            getCoinsBtnClicked = false;
             return;
         }
-        int restCoins = Mathf.Abs(Utils.getCurrentCoins() - int.Parse(priceTxt.text.Replace(" ", "")));
-
-        if (!Utils.isCoinsSufficient(priceTxt.text))
+        if (priceInCoin)
         {
-            titleTxt.text = "You need  " + Utils.getSeparatedNumberStr(double.Parse(restCoins.ToString())) + "  more coins";
-            buyBtnText.text = "GET COINS";
-            getCoinsBtnClicked= true;
+            int restCoins = Mathf.Abs(Utils.getCurrentCoins() - int.Parse(priceTxt.text.Replace(" ", "")));
+
+            if (!Utils.isCoinsSufficient(priceTxt.text))
+            {
+                titleTxt.text = "You need  " + Utils.getSeparatedNumberStr(double.Parse(restCoins.ToString())) + "  more coins";
+                buyBtnText.text = "GET COINS";
+                getCoinsBtnClicked = true;
+            }
+            else // buying has done
+            {
+                PlayerData playerData = SaveSystem.LoadPlayer();
+
+                playerData.coins = restCoins;
+                playerData.addVehicleName(boughtObjIdName);
+
+
+
+                FindObjectOfType<ShopItemController>().finishBuyingPrrocess();
+                SaveSystem.savePlayer(playerData);
+                FindObjectOfType<MainMenuController>().setCoinsText(restCoins.ToString());
+                FindObjectOfType<MainMenuController>().PlayBuySound();
+                gameObject.SetActive(false);
+            }
         }
-        else // buying has done
+        else
         {
-            PlayerData playerData = SaveSystem.LoadPlayer();
+            int restGems = Mathf.Abs(Utils.getCurrentGems() - int.Parse(priceTxt.text.Replace(" ", "")));
 
-            playerData.coins = restCoins;
-            playerData.addVehicleName(boughtObjIdName);
+            if (!Utils.isGemsSufficient(priceTxt.text))
+            {
+                titleTxt.text = "You need  " + Utils.getSeparatedNumberStr(double.Parse(restGems.ToString())) + "  more gems";
+                buyBtnText.text = "GET GEMS";
+                getCoinsBtnClicked = true;
+            }
+            else // buying has done
+            {
+                PlayerData playerData = SaveSystem.LoadPlayer();
 
-           
-            
-            FindObjectOfType<ShopItemController>().finishBuyingPrrocess();
-            SaveSystem.savePlayer(playerData);
-            FindObjectOfType<MainMenuController>().setCoinsText(restCoins.ToString());
-            FindObjectOfType<MainMenuController>().PlayBuySound();
-            gameObject.SetActive(false);
+                playerData.GEMS = restGems;
+                playerData.addVehicleName(boughtObjIdName);
+
+
+
+                FindObjectOfType<ShopItemController>().finishBuyingPrrocess();
+                SaveSystem.savePlayer(playerData);
+                FindObjectOfType<MainMenuController>().setGemsText(restGems.ToString());
+                FindObjectOfType<MainMenuController>().PlayBuySound();
+                gameObject.SetActive(false);
+            }
         }
        
 

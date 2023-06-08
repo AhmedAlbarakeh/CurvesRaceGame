@@ -12,7 +12,7 @@ public class GameOverController : MonoBehaviour
     public AudioSource gameOverSound;
 
     private GameManager gameManager;
-    private bool uiIsSetted=false;
+    public bool uiIsSetted=false;
     public GameObject gameOverDialog;
 
     

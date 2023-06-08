@@ -73,6 +73,7 @@ public class MainMenuController : MonoBehaviour
         Coinstext.text = Utils.getSeparatedNumberStr(double.Parse(coins));
 
     }
+   
     public void setGemsText( string gems)
     {
         GemsText.text = Utils.getSeparatedNumberStr(double.Parse(gems));

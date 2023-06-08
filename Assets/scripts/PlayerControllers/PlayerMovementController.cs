@@ -6,6 +6,7 @@ using System;
 using TMPro;
 using Unity.VisualScripting;
 using Cinemachine;
+using UnityEngine.UIElements;
 
 public class PlayerMovementController : MonoBehaviour
 {
@@ -79,7 +80,16 @@ public class PlayerMovementController : MonoBehaviour
     public void fillGas(){
         gas=1.0f;
     }
-   
+
+    public void conitinue()
+    {
+        GameManager.setEndGameFlag(false);
+        GameManager.setEndLevelFlag(false);
+ 
+        gas = 1;
+        gameObject.transform.rotation = Quaternion.identity;
+        transform.position = transform.position + new Vector3(0, 2, 0);
+    }
     void Start(){
 
 

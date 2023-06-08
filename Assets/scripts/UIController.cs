@@ -169,7 +169,7 @@ public class UIController : MonoBehaviour
     }
     public void updateGasAmount(float gas)
     {
-        Debug.Log("updateGasAmount :" + gas);
+        
         gasAmountImg.fillAmount = gas;
         if (gas <=0.25f)
         {
@@ -184,7 +184,7 @@ public class UIController : MonoBehaviour
         }
         else if(emptyGasWarning!=null)
         {
-            emptyGasWarning.transform.LeanScale(new Vector3(0, 0, 0),0.2f);
+            emptyGasWarning.transform.localScale = new Vector3(0, 0, 0);
             gasAmountImg.sprite = fullGasAmountSprt;
             fuelEmptSound.Stop();
             fuelSoundPlaying=false;

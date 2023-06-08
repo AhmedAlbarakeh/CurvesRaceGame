@@ -44,6 +44,20 @@ public static class Utils
         }
         return true;
     }
+    public static bool isGemsSufficient(string gemsTxt)
+    {
+        int savedGems = getCurrentGems();
+       
+        int gems = int.Parse(gemsTxt.Replace(" ", ""));
+        int restCoins = savedGems - gems;
+
+        if (restCoins < 0)
+        { // Coins not sufficient 
+            return false;
+
+        }
+        return true;
+    }
     public  static int getCurrentCoins()
     {
         if (SaveSystem.LoadPlayer() != null)
@@ -70,6 +84,16 @@ public static class Utils
        if(amount<=coins) playerData.coins = coins-amount;
 
        SaveSystem.savePlayer(playerData);
+    }
+
+    public static void decreaseGems(int amount)
+    {
+        int gems = getCurrentGems();
+        PlayerData playerData = SaveSystem.LoadPlayer();
+
+        if (amount <= gems) playerData.GEMS = gems - amount;
+
+        SaveSystem.savePlayer(playerData);
     }
 
     public static void increaseCoins(int amount)
