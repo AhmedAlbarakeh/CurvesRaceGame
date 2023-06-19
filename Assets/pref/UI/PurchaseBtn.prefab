@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 4097150482831750741}
   - component: {fileID: 4097150482831750738}
   - component: {fileID: 6741204108099721562}
-  - component: {fileID: 8458206339780015603}
+  - component: {fileID: 2922053272539284913}
   m_Layer: 5
   m_Name: PurchaseBtn
   m_TagString: Untagged
@@ -435,7 +435,7 @@ MonoBehaviour:
   imgSprt2: {fileID: 0}
   imgSprt3: {fileID: 0}
   isGems: 0
---- !u!114 &8458206339780015603
+--- !u!114 &2922053272539284913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,19 +455,7 @@ MonoBehaviour:
       m_Calls: []
   onPurchaseComplete:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4097150482831750737}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onPurchaseFailed:
     m_PersistentCalls:
       m_Calls: []
@@ -492,7 +480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6487142876004789356
 RectTransform:
   m_ObjectHideFlags: 0
@@ -541,10 +529,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.5$
+  m_text: ' 0.99 $'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 99dff1a5c51c8934a8bd03bcf8de8a86, type: 2}
-  m_sharedMaterial: {fileID: 5045915026902770270, guid: 99dff1a5c51c8934a8bd03bcf8de8a86, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: faa023ac1c26afc41b0c5a3546cb6109, type: 2}
+  m_sharedMaterial: {fileID: 7885767452470211798, guid: faa023ac1c26afc41b0c5a3546cb6109, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -568,8 +556,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

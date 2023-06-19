@@ -63,11 +63,8 @@ public class AdsController : MonoBehaviour
             CreateBannerView();
         }
         // create our request used to load the ad.
-        //List<string> deviceIds = new List<string> { "b84cd2f8-c443-46f0-8911-f09e0091e7a7" };
-        //RequestConfiguration requestConfiguration = new RequestConfiguration.Builder().SetTestDeviceIds(deviceIds).build();
-        //MobileAds.SetRequestConfiguration(requestConfiguration);
-        var adRequest = new AdRequest.Builder()
-            .Build();
+       
+        var adRequest = new AdRequest();
 
         // send the request to load the ad. 
         Debug.Log("Loading banner ad.");

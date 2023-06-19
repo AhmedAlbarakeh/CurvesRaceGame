@@ -32,13 +32,13 @@ public class RewardAdsController : MonoBehaviour
 
     public void ShowRewardedAd()
     {
-        const string rewardMsg =
-            "Rewarded ad rewarded the user. Type: {0}, amount: {1}.";
+       
 
         if (rewardedAd != null && rewardedAd.CanShowAd())
         {
             rewardedAd.Show((Reward reward) =>
             {
+                Debug.Log("Show Rewarded ad");
                 LoadRewardedAd();
                 RewardAddHasCompleted();
             });

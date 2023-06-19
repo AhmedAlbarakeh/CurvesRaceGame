@@ -2410,6 +2410,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1861918383}
     m_Modifications:
+    - target: {fileID: 1537035522868863136, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_text
+      value: 2.99 $
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1867789651}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.coins25000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1867789647}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseCoinsCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 25000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750736, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2558,6 +2602,10 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 209df09288a05ce4da16b4fd2cf3ae72, type: 3}
+    - target: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: priceStr
+      value: 2.99 $
+      objectReference: {fileID: 0}
     - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: button
       value: 
@@ -4491,6 +4539,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1861918383}
     m_Modifications:
+    - target: {fileID: 1537035522868863136, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_text
+      value: ' 2.99 $'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 743663570}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.gems100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 743663566}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseGemssCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750736, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4639,6 +4731,10 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 137d8aa8ba5d70541b80b99119a63c66, type: 3}
+    - target: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: priceStr
+      value: 2.99 $
+      objectReference: {fileID: 0}
     - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: button
       value: 
@@ -5817,6 +5913,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1861918383}
     m_Modifications:
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1834689917}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.coins5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 814906286}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseCoinsCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750736, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5916,7 +6052,7 @@ PrefabInstance:
     - target: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1834689915}
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -5977,6 +6113,10 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 93a74b778be4fd241b09f09109e2fbf8, type: 3}
+    - target: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: priceStr
+      value: 0.99 $
+      objectReference: {fileID: 0}
     - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: button
       value: 
@@ -8872,6 +9012,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1861918383}
     m_Modifications:
+    - target: {fileID: 1537035522868863136, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_text
+      value: 4.99 $
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1012991318}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.gems500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 984440175}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseGemssCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750736, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9016,6 +9200,10 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: f891305d2cf4e7d4da29276daa267516, type: 3}
+    - target: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: priceStr
+      value: 4.99 $
+      objectReference: {fileID: 0}
     - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: button
       value: 
@@ -14470,6 +14658,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1861918383}
     m_Modifications:
+    - target: {fileID: 1537035522868863136, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_text
+      value: ' 1.99 $'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 993778309}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.coins15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 565437182}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseCoinsCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750736, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14618,6 +14850,10 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 95bb0e9dae82a1240bd2e3d76020dd74, type: 3}
+    - target: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: priceStr
+      value: 1.99 $
+      objectReference: {fileID: 0}
     - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: button
       value: 
@@ -20218,17 +20454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1834689915 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
-  m_PrefabInstance: {fileID: 440255147}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b79b5624d944058bd39aad2b90fb275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1834689917 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4097150482831750738, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
@@ -21706,6 +21931,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1861918383}
     m_Modifications:
+    - target: {fileID: 1537035522868863136, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: m_text
+      value: 3.99 $
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1845064812}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: productId
+      value: com.ayhamo.gems150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1845064808}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPurchaseGemssCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoinsShopItemController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922053272539284913, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4097150482831750736, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21850,6 +22119,10 @@ PrefabInstance:
       propertyPath: imgSprt3
       value: 
       objectReference: {fileID: 21300000, guid: 137d8aa8ba5d70541b80b99119a63c66, type: 3}
+    - target: {fileID: 6741204108099721562, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
+      propertyPath: priceStr
+      value: 3.99 $
+      objectReference: {fileID: 0}
     - target: {fileID: 8458206339780015603, guid: b2f32c3499cb947419a585a69657cbce, type: 3}
       propertyPath: button
       value: 

@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RZ8R90N663L",
         "name": "com.AyhamCo.CurvesRaceGame",
-        "processId": 25150,
+        "processId": 13065,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,37 +11,31 @@
         {
             "deviceId": "RZ8R90N663L",
             "name": "com.AyhamCo.CurvesRaceGame",
-            "processId": 17636,
+            "processId": 17501,
             "exited": true
         },
         {
             "deviceId": "RZ8R90N663L",
             "name": "com.AyhamCo.CurvesRaceGame",
-            "processId": 18550,
+            "processId": 19770,
             "exited": true
         },
         {
             "deviceId": "RZ8R90N663L",
             "name": "com.AyhamCo.CurvesRaceGame",
-            "processId": 18678,
+            "processId": 20499,
             "exited": true
         },
         {
             "deviceId": "RZ8R90N663L",
             "name": "com.AyhamCo.CurvesRaceGame",
-            "processId": 19231,
+            "processId": 9551,
             "exited": true
         },
         {
             "deviceId": "RZ8R90N663L",
-            "name": "com.sec.android.app.launcher",
-            "processId": 1877,
-            "exited": false
-        },
-        {
-            "deviceId": "RZ8R90N663L",
             "name": "com.AyhamCo.CurvesRaceGame",
-            "processId": 25150,
+            "processId": 13065,
             "exited": false
         }
     ],
