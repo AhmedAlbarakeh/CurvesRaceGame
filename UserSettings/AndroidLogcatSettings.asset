@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RZ8R90N663L",
         "name": "com.AyhamCo.CurvesRaceGame",
-        "processId": 13065,
+        "processId": 16596,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -36,6 +36,12 @@
             "deviceId": "RZ8R90N663L",
             "name": "com.AyhamCo.CurvesRaceGame",
             "processId": 13065,
+            "exited": false
+        },
+        {
+            "deviceId": "RZ8R90N663L",
+            "name": "com.AyhamCo.CurvesRaceGame",
+            "processId": 16596,
             "exited": false
         }
     ],
