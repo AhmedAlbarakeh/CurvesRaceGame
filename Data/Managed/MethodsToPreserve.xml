@@ -1,0 +1,118 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="CoinsShopItemController">
+			<method name="OnPurchaseCoinsCompleted"/>
+			<method name="OnPurchaseCoinsCompleted"/>
+			<method name="OnPurchaseCoinsCompleted"/>
+			<method name="OnPurchaseGemssCompleted"/>
+			<method name="OnPurchaseGemssCompleted"/>
+			<method name="OnPurchaseGemssCompleted"/>
+		</type>
+		<type fullname="EndLevelController">
+			<method name="mainMenu"/>
+			<method name="restartLevel"/>
+		</type>
+		<type fullname="GameManager">
+			<method name="GoToMainMenu"/>
+			<method name="RestartGame"/>
+		</type>
+		<type fullname="MainMenuController">
+			<method name="ExitGame"/>
+			<method name="OnOptionButtonSelect"/>
+			<method name="OnOptionButtonSelect"/>
+			<method name="OnOptionButtonSelect"/>
+			<method name="OnOptionButtonSelect"/>
+			<method name="StartGame"/>
+		</type>
+		<type fullname="PauseDialogController">
+			<method name="OnExitClicked"/>
+			<method name="OnRestartBtnClicked"/>
+			<method name="OnResumeButtonClicked"/>
+			<method name="OnResumeButtonClicked"/>
+		</type>
+		<type fullname="RewardAdsController">
+			<method name="ShowRewardedAd"/>
+			<method name="ShowRewardedAd"/>
+		</type>
+		<type fullname="SelectCarDialogUI">
+			<method name="OnBuyBtnClicked"/>
+			<method name="OnBuyBtnClicked"/>
+		</type>
+		<type fullname="SettingsController">
+			<method name="GoToPrivacyPolicy"/>
+			<method name="switchLanguage"/>
+			<method name="switchLanguage"/>
+			<method name="toggleMusic"/>
+			<method name="toggleSound"/>
+		</type>
+		<type fullname="ShopItemController">
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+			<method name="OnShopItemClicked"/>
+		</type>
+		<type fullname="TuneItemController">
+			<method name="OnTuneItemClicked"/>
+			<method name="OnTuneItemClicked"/>
+			<method name="OnTuneItemClicked"/>
+			<method name="OnTuneItemClicked"/>
+		</type>
+		<type fullname="UIController">
+			<method name="ShowPauseDialog"/>
+		</type>
+		<type fullname="UpgradeDialogController">
+			<method name="upgradeCarButtonClicked"/>
+		</type>
+		<type fullname="VehicleSelectionController">
+			<method name="brakeVehicle"/>
+			<method name="idleVehicle"/>
+			<method name="idleVehicle"/>
+			<method name="moveForwardVehicle"/>
+			<method name="MoveNetrogen"/>
+			<method name="Shoot"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>
