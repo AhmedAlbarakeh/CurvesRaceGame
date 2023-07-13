@@ -1,10 +1,39 @@
+# workflows:
+#   my-workflow:
+#     publishing:
+#       app_store_connect:
+#         api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg/1Md0bswgqrvPKvB37GHjOp0MnyQQNYSY8ELx1gPMROgCgYIKoZIzj0DAQehRANCAAT30ujJwL81SzBI7qLMIWKHKuwPQeCMxR0JIblZfAZmZ4mKIBD01SQDoBKheP7ikxW7BEyI2fC4jtTWlcoJJUjv
+#         key_id: GBA5Y8Y3LX
+#         issuer_id: 9bb14943-c02d-46b4-99a9-f088f800e133
+#         submit_to_testflight: true
+#         beta_groups:
+#           - Beta Testers
 workflows:
   my-workflow:
-    publishing:
-      app_store_connect:
-        api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg/1Md0bswgqrvPKvB37GHjOp0MnyQQNYSY8ELx1gPMROgCgYIKoZIzj0DAQehRANCAAT30ujJwL81SzBI7qLMIWKHKuwPQeCMxR0JIblZfAZmZ4mKIBD01SQDoBKheP7ikxW7BEyI2fC4jtTWlcoJJUjv
-        key_id: GBA5Y8Y3LX
-        issuer_id: 9bb14943-c02d-46b4-99a9-f088f800e133
-        submit_to_testflight: true
-        beta_groups:
-          - Beta Testers
+    scripts:
+      - name: Add provisioning profiles
+        script: |
+          set -e # exit on first failed command
+
+          PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$PROFILES_HOME"
+          echo curveProfileNew | base64 --decode > "$PROFILES_HOME/$(uuidgen).mobileprovision"
+      - name: Add signing certificate
+        script: |
+          set -e # exit on first failed command
+
+          echo curveCirtificate | base64 --decode > /tmp/certificate.p12
+          keychain initialize
+          keychain add-certificates \
+              --certificate /tmp/certificate.p12 \
+              --certificate-password hR4yMGtG
+      - name: Increment build number
+        script: agvtool new-version -all $BUILD_NUMBER
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles
+      - name: Build ipa for distribution
+        script: xcode-project build-ipa \
+                    --workspace "CodemagicSample.xcworkspace" \
+                    --scheme "CodemagicSample"
+    artifacts:
+      - build/ios/ipa/*.ipa
