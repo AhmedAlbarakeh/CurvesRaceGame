@@ -22,7 +22,7 @@ workflows:
         script: |
           set -e # exit on first failed command
 
-          echo curveCirtificate | base64 --decode > /tmp/curveCirtificateNew.p12
+          echo curveCirtificate_new | base64 --decode > /tmp/curveCirtificateNew.p12
           keychain initialize
           keychain add-certificates \
               --certificate /tmp/curveCirtificateNew.p12 \
