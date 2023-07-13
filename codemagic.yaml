@@ -18,7 +18,7 @@ workflows:
           PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
           mkdir -p "$PROFILES_HOME"
           echo curveProfileNew | base64 --decode > "$PROFILES_HOME/$(uuidgen).mobileprovision"
-      - name: Add signing certificate
+      - name: Add signing curveCirtificateNew
         script: |
           set -e # exit on first failed command
 
