@@ -33,7 +33,7 @@ workflows:
         script: xcode-project use-profiles
       - name: Build ipa for distribution
         script: xcode-project build-ipa \
-                    --workspace "project.pbxproj" \
-                    --scheme "Unity-iPhone"
+                    --workspace "project" \
+                    --scheme "Unity"
     artifacts:
       - build/ios/ipa/*.ipa
