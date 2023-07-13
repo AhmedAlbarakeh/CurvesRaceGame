@@ -1,5 +1,13 @@
 workflows:
-    sample-workflow:
-        name: curve workflow
-        max_build_duration: 120
-        instance_type: mac_mini_m1
+  curve-workflow:
+    publishing:
+      app_store_connect:
+        api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgVG6eQVvNqp3BBQyc
+Onx1AQI5eMWUuyyUA5ic5XOp0ZCgCgYIKoZIzj0DAQehRANCAARTpIML98jkGpsb
+J1EMgxWwKDDwiBtbhcJu3hVFgfOpCh7K9cDoYoaC3nVCCprT8szZdMGW0P3pyio8
+95NasJKu
+        key_id: Q3DRUGV2DN
+        issuer_id: 9bb14943-c02d-46b4-99a9-f088f800e133
+        submit_to_testflight: true
+        beta_groups:
+          - Beta Testers
