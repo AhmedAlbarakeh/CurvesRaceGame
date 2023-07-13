@@ -1,10 +1,29 @@
 workflows:
   curve-workflow:
-    publishing:
-      app_store_connect:
-        api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgVG6eQVvNqp3BBQycOnx1AQI5eMWUuyyUA5ic5XOp0ZCgCgYIKoZIzj0DAQehRANCAARTpIML98jkGpsbJ1EMgxWwKDDwiBtbhcJu3hVFgfOpCh7K9cDoYoaC3nVCCprT8szZdMGW0P3pyio895NasJKu
-        key_id: Q3DRUGV2DN
-        issuer_id: 9bb14943-c02d-46b4-99a9-f088f800e133
-        submit_to_testflight: true
-        beta_groups:
-          - Beta Testers
+    scripts:
+      - name: Add provisioning profiles
+        script: |
+          set -e # exit on first failed command
+
+          PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$PROFILES_HOME"
+          echo ${PROVISIONING_PROFILE?} | base64 --decode > "$PROFILES_HOME/$(uuidgen).mobileprovision"
+      - name: Add signing certificate
+        script: |
+          set -e # exit on first failed command
+
+          echo ${CERTIFICATE?} | base64 --decode > /tmp/certificate.p12
+          keychain initialize
+          keychain add-certificates \
+              --certificate /tmp/certificate.p12 \
+              --certificate-password ${CERTIFICATE_PASSWORD?}
+      - name: Increment build number
+        script: agvtool new-version -all $BUILD_NUMBER
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles
+      - name: Build ipa for distribution
+        script: xcode-project build-ipa \
+                    --workspace "${XCODE_WORKSPACE?}" \
+                    --scheme "${XCODE_SCHEME?}"
+    artifacts:
+      - build/ios/ipa/*.ipa
