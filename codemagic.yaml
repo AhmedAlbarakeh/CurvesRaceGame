@@ -2,10 +2,7 @@ workflows:
   curve-workflow:
     publishing:
       app_store_connect:
-        api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgVG6eQVvNqp3BBQyc
-Onx1AQI5eMWUuyyUA5ic5XOp0ZCgCgYIKoZIzj0DAQehRANCAARTpIML98jkGpsb
-J1EMgxWwKDDwiBtbhcJu3hVFgfOpCh7K9cDoYoaC3nVCCprT8szZdMGW0P3pyio8
-95NasJKu
+        api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgVG6eQVvNqp3BBQycOnx1AQI5eMWUuyyUA5ic5XOp0ZCgCgYIKoZIzj0DAQehRANCAARTpIML98jkGpsbJ1EMgxWwKDDwiBtbhcJu3hVFgfOpCh7K9cDoYoaC3nVCCprT8szZdMGW0P3pyio895NasJKu
         key_id: Q3DRUGV2DN
         issuer_id: 9bb14943-c02d-46b4-99a9-f088f800e133
         submit_to_testflight: true
