@@ -22,10 +22,10 @@ workflows:
         script: |
           set -e # exit on first failed command
 
-          echo curveCirtificate | base64 --decode > /tmp/curveCirtificate_new.p12
+          echo curveCirtificate | base64 --decode > /tmp/certificate.p12
           keychain initialize
           keychain add-certificates \
-              --certificate /tmp/curveCirtificate_new.p12 \
+              --certificate /tmp/certificate.p12 \
               --certificate-password hR4yMGtG
       - name: Increment build number
         script: agvtool new-version -all $BUILD_NUMBER
