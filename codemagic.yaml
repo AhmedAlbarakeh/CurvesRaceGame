@@ -8,39 +8,9 @@
 #         submit_to_testflight: true
 #         beta_groups:
 #           - Beta Testers
-# workflows:
-#   my-workflow:
-#     scripts:
-      # - name: Add provisioning profiles
-      #   script: |
-      #     set -e # exit on first failed command
-
-      #     PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
-      #     mkdir -p "$PROFILES_HOME"
-      #     echo curveProfileNew | base64 --decode > "$PROFILES_HOME/$(uuidgen).mobileprovision"
-      # - name: Add signing certificate
-      #   script: |
-      #     set -e # exit on first failed command
-
-      #     echo curveCirtificate_new | base64 --decode > /tmp/curveCirtificateNew.p12
-      #     keychain initialize
-      #     keychain add-certificates \
-      #         --certificate /tmp/curveCirtificateNew.p12 \
-      #         --certificate-password hR4yMGtG
-    #   - name: Increment build number
-    #     script: agvtool new-version -all $BUILD_NUMBER
-    #   - name: Set up code signing settings on Xcode project
-    #     script: xcode-project use-profiles
-    #   - name: Build ipa for distribution
-    #     script: xcode-project build-ipa \
-    #                 --workspace "project.pbxproj." \
-    #                 --scheme "Unity-iPhone.xcscheme"
-    # artifacts:
-    #   - build/ios/ipa/*.ipa
-
-
-    workflows:
-  unity-ios-workflow:
+workflows:
+unity-ios-workflow:
+  my-workflow:
     name: Unity iOS Workflow
     max_build_duration: 120
     integrations:
@@ -119,3 +89,85 @@
         # Configuration related to App Store (optional)
         # Note: This action is performed during post-processing.
         submit_to_app_store: true
+
+
+  #   workflows:
+  # unity-ios-workflow:
+  #   name: Unity iOS Workflow
+  #   max_build_duration: 120
+  #   integrations:
+  #     app_store_connect: codemagic
+  #   environment:
+  #     ios_signing:
+  #       distribution_type: app_store
+  #       bundle_identifier: io.codemagic.unitysample
+  #     groups:
+  #       - unity_credentials
+  #     vars:
+  #       UNITY_IOS_DIR: ios
+  #       XCODE_PROJECT: "Unity-iPhone.xcodeproj"
+  #       XCODE_SCHEME: "Unity-iPhone"
+  #       BUNDLE_ID: "io.codemagic.unitysample"
+  #       APP_ID: 1555555551
+  #   scripts:
+  #     - name: Activate Unity license
+  #       script: | 
+  #         $UNITY_HOME/Contents/MacOS/Unity -batchmode -quit -logFile \
+  #           -serial ${UNITY_SERIAL} \
+  #           -username ${UNITY_EMAIL} \
+  #           -password ${UNITY_PASSWORD}
+  #     - name: Generate the Xcode project from Unity
+  #       script: | 
+  #         $UNITY_HOME/Contents/MacOS/Unity -batchmode \
+  #           -quit \
+  #           -logFile \
+  #           -projectPath . \
+  #           -executeMethod BuildScript.BuildIos \
+  #           -nographics
+  #     - name: Set up code signing settings on Xcode project
+  #       script: | 
+  #         xcode-project use-profiles
+  #     - name: Set the build number
+  #       script: | 
+  #         BUILD_NUMBER=($(app-store-connect get-latest-app-store-build-number "$APP_ID") + 1)
+  #         cd $UNITY_IOS_DIR
+  #         agvtool new-version -all $BUILD_NUMBER
+  #     - name: Build the project
+  #       script: | 
+  #         xcode-project build-ipa \
+  #           --project "$UNITY_IOS_DIR/$XCODE_PROJECT" \
+  #           --scheme "$XCODE_SCHEME"
+  #   artifacts:
+  #     - build/ios/ipa/*.ipa
+  #     - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+  #   publishing:
+  #     scripts:
+  #       - name: Deactivate Unity License
+  #         script: | 
+  #           /Applications/Unity\ Hub.app/Contents/Frameworks/UnityLicensingClient_V1.app/Contents/MacOS/Unity.Licensing.Client \
+  #           --return-ulf \
+  #           --username ${UNITY_EMAIL} \
+  #           --password ${UNITY_PASSWORD}
+  #     email:
+  #       recipients:
+  #         - user_1@example.com
+  #         - user_2@example.com
+  #       notify:
+  #         success: true
+  #         failure: false
+  #     app_store_connect:
+  #       auth: integration
+  #       #
+  #       # Configuration related to TestFlight (optional)
+  #       # Note: This action is performed during post-processing.
+  #       submit_to_testflight: true 
+  #       #
+  #       # Specify the names of beta tester groups that will get access 
+  #       # to the build once it has passed beta review.
+  #       beta_groups:
+  #         - group name 1
+  #         - group name 2
+  #       #
+  #       # Configuration related to App Store (optional)
+  #       # Note: This action is performed during post-processing.
+  #       submit_to_app_store: true
