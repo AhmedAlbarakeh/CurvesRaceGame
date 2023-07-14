@@ -10,7 +10,7 @@
 #           - Beta Testers
 workflows:
   my-workflow:
-     max_build_duration: 120
+    max_build_duration: 120
     integrations:
       app_store_connect: codemagic
     environment:
