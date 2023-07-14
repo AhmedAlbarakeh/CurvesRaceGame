@@ -70,8 +70,14 @@ workflows:
         BUNDLE_ID: "com.ayhamco.CurvesRaceGame"
         APP_ID: 6449428829
     scripts:
+      - name: Activate Unity license
+        script: | 
+          $UNITY_HOME/Contents/MacOS/Unity -batchmode -quit -logFile \
+            -serial ${UNITY_SERIAL} \
+            -username ${UNITY_EMAIL} \
+            -password ${UNITY_PASSWORD}
       - name: Generate the Xcode project from Unity
-        script: 
+        script: | 
           $UNITY_HOME/Contents/MacOS/Unity -batchmode \
             -quit \
             -logFile \
@@ -81,6 +87,11 @@ workflows:
       - name: Set up code signing settings on Xcode project
         script: | 
           xcode-project use-profiles
+      # - name: Set the build number
+      #   script: | 
+      #     BUILD_NUMBER=($(app-store-connect get-latest-app-store-build-number "$APP_ID") + 1)
+      #     cd $UNITY_IOS_DIR
+      #     agvtool new-version -all $BUILD_NUMBER
 
        - name: Increment build number
         script: agvtool new-version -all $BUILD_NUMBER
