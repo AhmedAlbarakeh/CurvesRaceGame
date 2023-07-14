@@ -8,50 +8,38 @@
 #         submit_to_testflight: true
 #         beta_groups:
 #           - Beta Testers
-# workflows:
-#   my-workflow:
-#     scripts:
-#       # - name: Add provisioning profiles
-#       #   script: |
-#       #     set -e # exit on first failed command
-
-#       #     PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
-#       #     mkdir -p "$PROFILES_HOME"
-#       #     echo curveProfileNew | base64 --decode > "$PROFILES_HOME/$(uuidgen).mobileprovision"
-#       # - name: Add signing certificate
-#       #   script: |
-#       #     set -e # exit on first failed command
-
-#       #     echo curveCirtificate_new | base64 --decode > /tmp/curveCirtificateNew.p12
-#       #     keychain initialize
-#       #     keychain add-certificates \
-#       #         --certificate /tmp/curveCirtificateNew.p12 \
-#       #         --certificate-password hR4yMGtG
-#       - name: Increment build number
-#         script: agvtool new-version -all $BUILD_NUMBER
-#       - name: Set up code signing settings on Xcode project
-#         script: xcode-project use-profiles
-#       - name: Build ipa for distribution
-#         script: xcode-project build-ipa \
-#                     --workspace "project.pbxproj.xcworkspace" \
-#                     --scheme "Unity-iPhone.xcscheme"
-#     artifacts:
-#       - build/ios/ipa/*.ipa
-
-
-
-
-# workflows:
-#   my-workflow:
-#     publishing:
-#       app_store_connect:
-#         api_key: MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg/1Md0bswgqrvPKvB37GHjOp0MnyQQNYSY8ELx1gPMROgCgYIKoZIzj0DAQehRANCAAT30ujJwL81SzBI7qLMIWKHKuwPQeCMxR0JIblZfAZmZ4mKIBD01SQDoBKheP7ikxW7BEyI2fC4jtTWlcoJJUjv
-#         key_id: GBA5Y8Y3LX
-#         issuer_id: 9bb14943-c02d-46b4-99a9-f088f800e133
-#         submit_to_testflight: true
-#         beta_groups:
-#           - Beta Testers
 workflows:
+  my-workflow:
+    scripts:
+      # - name: Add provisioning profiles
+      #   script: |
+      #     set -e # exit on first failed command
+
+      #     PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+      #     mkdir -p "$PROFILES_HOME"
+      #     echo curveProfileNew | base64 --decode > "$PROFILES_HOME/$(uuidgen).mobileprovision"
+      # - name: Add signing certificate
+      #   script: |
+      #     set -e # exit on first failed command
+
+      #     echo curveCirtificate_new | base64 --decode > /tmp/curveCirtificateNew.p12
+      #     keychain initialize
+      #     keychain add-certificates \
+      #         --certificate /tmp/curveCirtificateNew.p12 \
+      #         --certificate-password hR4yMGtG
+    #   - name: Increment build number
+    #     script: agvtool new-version -all $BUILD_NUMBER
+    #   - name: Set up code signing settings on Xcode project
+    #     script: xcode-project use-profiles
+    #   - name: Build ipa for distribution
+    #     script: xcode-project build-ipa \
+    #                 --workspace "project.pbxproj." \
+    #                 --scheme "Unity-iPhone.xcscheme"
+    # artifacts:
+    #   - build/ios/ipa/*.ipa
+
+
+    workflows:
   unity-ios-workflow:
     name: Unity iOS Workflow
     max_build_duration: 120
@@ -60,15 +48,15 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.ayhamco.CurvesRaceGame
+        bundle_identifier: io.codemagic.unitysample
       groups:
         - unity_credentials
       vars:
         UNITY_IOS_DIR: ios
         XCODE_PROJECT: "Unity-iPhone.xcodeproj"
         XCODE_SCHEME: "Unity-iPhone"
-        BUNDLE_ID: "com.ayhamco.CurvesRaceGame"
-        APP_ID: 6449428829
+        BUNDLE_ID: "io.codemagic.unitysample"
+        APP_ID: 1555555551
     scripts:
       - name: Activate Unity license
         script: | 
@@ -87,15 +75,11 @@ workflows:
       - name: Set up code signing settings on Xcode project
         script: | 
           xcode-project use-profiles
-      # - name: Set the build number
-      #   script: | 
-      #     BUILD_NUMBER=($(app-store-connect get-latest-app-store-build-number "$APP_ID") + 1)
-      #     cd $UNITY_IOS_DIR
-      #     agvtool new-version -all $BUILD_NUMBER
-
-       - name: Increment build number
-        script: agvtool new-version -all $BUILD_NUMBER
-
+      - name: Set the build number
+        script: | 
+          BUILD_NUMBER=($(app-store-connect get-latest-app-store-build-number "$APP_ID") + 1)
+          cd $UNITY_IOS_DIR
+          agvtool new-version -all $BUILD_NUMBER
       - name: Build the project
         script: | 
           xcode-project build-ipa \
@@ -106,16 +90,16 @@ workflows:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     publishing:
       scripts:
-        # - name: Deactivate Unity License
-        #   script: | 
-        #     /Applications/Unity\ Hub.app/Contents/Frameworks/UnityLicensingClient_V1.app/Contents/MacOS/Unity.Licensing.Client \
-        #     --return-ulf \
-        #     --username ${UNITY_EMAIL} \
-        #     --password ${UNITY_PASSWORD}
+        - name: Deactivate Unity License
+          script: | 
+            /Applications/Unity\ Hub.app/Contents/Frameworks/UnityLicensingClient_V1.app/Contents/MacOS/Unity.Licensing.Client \
+            --return-ulf \
+            --username ${UNITY_EMAIL} \
+            --password ${UNITY_PASSWORD}
       email:
         recipients:
-          - hosamzoubi89@gmail.com
-          
+          - user_1@example.com
+          - user_2@example.com
         notify:
           success: true
           failure: false
@@ -129,8 +113,8 @@ workflows:
         # Specify the names of beta tester groups that will get access 
         # to the build once it has passed beta review.
         beta_groups:
-          - tester
-        
+          - group name 1
+          - group name 2
         #
         # Configuration related to App Store (optional)
         # Note: This action is performed during post-processing.
