@@ -40,7 +40,7 @@ workflows:
       - name: Build the project
         script: | 
           xcode-project build-ipa \
-            --project "$UNITY_IOS_DIR/$XCODE_PROJECT" \
+            --project "$UNITY_HOME" \
             --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
