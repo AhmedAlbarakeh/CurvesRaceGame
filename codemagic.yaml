@@ -70,13 +70,7 @@ workflows:
         BUNDLE_ID: "com.ayhamco.CurvesRaceGame"
         APP_ID: 6449428829
     scripts:
-      # - name: Activate Unity license
-      #   script: | 
-      #     $UNITY_HOME/Contents/MacOS/Unity -batchmode -quit -logFile \
-      #       -serial ${UNITY_SERIAL} \
-      #       -username ${UNITY_EMAIL} \
-      #       -password ${UNITY_PASSWORD}
-      - name: Generate the Xcode project from Unity
+     - name: Generate the Xcode project from Unity
         script: | 
           $UNITY_HOME/Contents/MacOS/Unity -batchmode \
             -quit \
