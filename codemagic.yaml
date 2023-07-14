@@ -12,7 +12,7 @@ workflows:
   my-workflow:
     max_build_duration: 120
     integrations:
-      app_store_connect: APIKEY
+      app_store_connect: codemagic
     environment:
       ios_signing:
         distribution_type: app_store
@@ -28,7 +28,7 @@ workflows:
     scripts:
       - name: Generate the Xcode project from Unity
         script: | 
-          $UNITY_HOME/
+          $UNITY_HOME
       - name: Set up code signing settings on Xcode project
         script: | 
           xcode-project use-profiles
