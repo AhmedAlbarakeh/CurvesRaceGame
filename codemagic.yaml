@@ -10,8 +10,7 @@
 #           - Beta Testers
 workflows:
 unity-ios-workflow:
-  my-workflow:
-    name: Unity iOS Workflow
+    name: my-workflow
     max_build_duration: 120
     integrations:
       app_store_connect: codemagic
